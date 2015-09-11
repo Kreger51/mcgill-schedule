@@ -1,0 +1,57 @@
+# Cache
+.webassets-cache
+
+# Virtual environment
+env
+
+# Confidential
+setuptest.sh
+
+# Experiments
+_notebook
+.ipynb_checkpoints
+Untitled.ipynb
+
+*.py[cod]
+
+# C extensions
+*.so
+
+# Packages
+pip-selfcheck.json
+pyvenv.cfg
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib64
+venv*/
+pyvenv*/
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+.coverage.*
+nosetests.xml
+htmlcov
+
+# Sphinx
+docs/_build
+
+.DS_Store
+*~
+.*.sw[po]
+.build
+.ve
+.bootstrap
+*.bak

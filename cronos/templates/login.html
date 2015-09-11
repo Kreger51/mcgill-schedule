@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% from 'forms.html' import textinput, show_messages %}
+
+{% block content %}
+  <h1>Enter your Minerva information.</h1>
+  <form action="" method="post" class="minerva-form">
+    {{ show_messages() }}
+    {{ form.hidden_tag() }}
+    {{ textinput(form.user(), form.user.description) }}
+    {{ textinput(form.secret(), form.secret.description) }}
+    <div class="login-select">
+      {{ form.season() }}
+      {{ form.year() }}
+    </div>
+    <br>
+    <button type="submit" class="btn btn-lg next">
+    Fetch my schedule.
+    </button>
+  </form>
+
+{% endblock %}
+{% block scripts %}
+  <!-- Small hack to prevent autocomplete clashing with placeholder. -->
+  {# <script type="text/javascript">
+    $(document).ready(function() {
+      setTimeout(function() {
+        document.getElementById('secret').type = 'password';
+      }, 0);
+
+    });
+  </script> #}
+{% endblock %}

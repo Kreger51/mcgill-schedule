@@ -1,0 +1,196 @@
+/*
+ * Layout
+ * Mostly from original template
+ */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-align: center;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+.masthead {
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+
+/*
+ * Global
+ */
+
+html,
+body {
+  background-color: #fcfcfc;
+  color: #141414;
+  font-family: 'Maven Pro', 'sans-serif';
+  font-weight: normal;
+}
+
+/*
+ * Header
+ */
+
+.masthead a {
+  color: inherit;
+}
+
+.logo {
+  font-size: 42px;
+  font-family: 'Ubuntu', 'sans-serif';
+  font-weight: bold;
+  letter-spacing: 4px;
+  float: left;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -15px;
+}
+
+/*
+ * Middle
+ */
+
+.cover {
+  padding: 0 20px;
+}
+
+h1 {
+  font-family: 'Josefin Slab', 'sans-serif';
+  margin-bottom: 3%;
+}
+
+.next {
+  text-transform: none;
+  border: 3px solid #2196F3;
+  border-radius: 0px;
+  z-index: 1;
+  background-color: #2196F3;
+  color: white;
+}
+
+.alert {
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .next {
+    position: relative;
+    color: #2196F3;
+    background-color: transparent;
+  }
+  .next:before {
+    content: "";
+    position: absolute;
+    transition: right 0.2s ease-in;
+    background: #2196F3;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 100%;
+    z-index: -1;
+  }
+  .next:hover:before {
+    right: 0;
+    background-color: #2196F3;
+  }
+  .next:hover {
+    color: white;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+}
+/*
+ * Footer
+ */
+.mastfoot p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+/*
+ * Affix and center OLD
+ */
+
+@media (min-width: 768px) {
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+  }
+}
+
+
+/*
+ *  Login form
+ */
+ .minerva-form {
+   margin: 0 auto;
+   width: 300px;
+   margin-bottom: 50px;
+ }
+
+ .minerva-form [type="submit"] {
+   margin-top: 3%;
+ }
+
+ .login-select select {
+   width: inherit;
+   display: inline-block;
+   height: 34px;
+   padding: 0px 12px;
+   font-size: 18px;
+   line-height: 1.42857143;
+   color: inherit;
+   background-color: #fff;
+   -ms-user-select: none;
+   -webkit-user-select: none;
+     /* webkit (safari, chrome) browsers */
+   -moz-user-select: none;
+ }
+
+ @media (min-width: 768px) {
+   .mineva-form {
+     width: 30%;
+   }
+ }
