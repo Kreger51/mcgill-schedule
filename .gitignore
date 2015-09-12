@@ -1,3 +1,6 @@
+# Compiled Assets
+cronos/static/public/
+
 # Cache
 .webassets-cache
 
